@@ -1,4 +1,2 @@
-import API
-
-a = API.signup()
-print(a)
+import Elementsearch
+Elementsearch.normal()
