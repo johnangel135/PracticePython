@@ -1,2 +1,0 @@
-import ReadFile
-ReadFile.readfile()
