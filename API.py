@@ -39,6 +39,7 @@ class user():
     obj = signin()['Data']['UserObject']
     UserID = obj['UserID']
     Email = obj['Email']
+    Phone = obj['MobileNumber']
 
 def signup():
     url = sgup_url
