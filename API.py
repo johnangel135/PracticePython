@@ -5,6 +5,7 @@ base_url = 'http://113.161.77.24:10204'
 auth_url = base_url + '/api/identity/Authenticate'
 sgin_url = base_url + '/api/identity/SignIn'
 sgup_url = base_url + '/api/identity/signup'
+getcuisine_url = base_url + '/api/Restaurants/GetCuisines'
 
 def authorize():
     url = auth_url
@@ -56,4 +57,9 @@ def signup():
     ]
 
     r = requests.post(url, headers = header, data= data)
+    return r.json()
+
+def getcuisine():
+    url = getcuisine_url
+    r = requests.get(url, headers = header)
     return r.json()
